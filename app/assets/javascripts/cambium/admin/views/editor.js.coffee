@@ -2,7 +2,7 @@ class App.Views.Editor extends Backbone.View
 
   initialize: ->
     for textarea in $('textarea.editor')
-      $(textarea).trumbowyg
+      $(textarea).trumbowyg(
         fullscreenable: false
         semantic: false
         svgPath: TRUMBOWYG_SVG
@@ -14,6 +14,6 @@ class App.Views.Editor extends Backbone.View
           '|', 'justifyLeft', 'justifyCenter',
           '|', 'btnGrp-lists',
           '|', 'horizontalRule']
-      .on('twbfocus', () ->
-        console.log('focus!')
+      )
+      .on('tbwfocus', () ->
       )
