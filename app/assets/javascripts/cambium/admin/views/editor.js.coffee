@@ -16,4 +16,5 @@ class App.Views.Editor extends Backbone.View
           '|', 'horizontalRule']
       )
       .on('tbwfocus', () ->
+        console.log('focused')
       )
