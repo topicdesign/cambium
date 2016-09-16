@@ -13,3 +13,6 @@ class App.Views.Editor extends Backbone.View
           '|', 'justifyLeft', 'justifyCenter',
           '|', 'btnGrp-lists',
           '|', 'horizontalRule']
+      .on('twbfocus', () ->
+        console.log('focus!')
+      )
